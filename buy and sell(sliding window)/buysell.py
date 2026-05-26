@@ -3,7 +3,7 @@ def maxProfit(prices):
         right=1
         max_profit=0
         while right<len(prices):
-            if prices[right]>prices[left]:
+            if prices[left]<prices[right]:
                 profit= prices[right]-prices[left]
                 max_profit=max(profit, max_profit)
             else:
